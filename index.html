@@ -3,10 +3,12 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>资源便携下载 :) Have a nice day!</title>
   <style>
     .layout{
-      margin-left: 50px;
+      margin-left: 5%;
+      margin-right: 5%;
     }
     .lo_r{
       color:red;
@@ -36,16 +38,16 @@
   <input id="key" type="text" placeholder="请输入搜索内容">
   <button onclick="go()">搜索</button>
   </p>
-
+  
   <script>
     function go() {
       var k = document.getElementById('key').value.trim();
       if (k) location.href = 'https://www.gequbao.com/s/'+encodeURIComponent(k);
     }
   </script>
-  <h2>album:</h2>
-  <a href="https://www.gequbao.com/s/%E5%A4%AA%E5%B9%B3%E7%9B%9B%E4%B8%96">太平盛世</a>
-  <a href="https://www.gequbao.com/s/%E5%8D%81%E4%B8%80%E6%9C%88%E7%9A%84%E8%82%96%E9%82%A6">十一月的肖邦</a>
+  <h2>album:</h2> <!-- 专辑 -->
+    <a href="https://www.gequbao.com/s/%E5%A4%AA%E5%B9%B3%E7%9B%9B%E4%B8%96">太平盛世</a>
+    <a href="https://www.gequbao.com/s/%E5%8D%81%E4%B8%80%E6%9C%88%E7%9A%84%E8%82%96%E9%82%A6">十一月的肖邦</a>
   <p class="lo_b">---------------------------</p>
 </div>
 </body>
