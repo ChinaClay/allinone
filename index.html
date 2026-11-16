@@ -123,6 +123,11 @@
       var key = document.getElementById('by').value.trim();
       if (key) location.href = 'https://cn.bing.com/search?q='+encodeURIComponent(key);
     }
+    var note = document.getElementById('note');
+    note.value = localStorage.getItem('my_note') || '';
+    note.addEventListener('input', function() {
+      localStorage.setItem('my_note', note.value);
+    });
   </script>
 </div>
 </body>
