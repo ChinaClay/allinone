@@ -137,7 +137,7 @@
       var url = URL.createObjectURL(blob);
       var a = document.createElement('a');
       a.href = url;
-      a.download = 'note-' + new Data().toISOString().slice(0, 10) + '.txt';
+      a.download = 'note-' + new Date().toISOString().slice(0, 10) + '.txt';
       a.click();
       URL.revokeObjectURL(url);
     }
